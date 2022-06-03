@@ -1,0 +1,166 @@
+#logooo{
+    /*border:2px solid rgb(52, 248, 3);*/
+    display:inline-block;
+    float: left;
+}
+#logoooooooo{
+    margin-top: 10px;
+    /*border:2px solid green;*/
+    display:inline-block;
+    float: right;
+    margin-right: 10px;
+
+}
+#logoo{
+    /*border:2px solid violet;*/
+    float:left;
+}
+#logo{
+    /*border:2px solid rgb(0, 225, 255);*/
+   display:inline-block;
+    
+}
+.logindiv{
+    /*border:2px solid rgb(4, 0, 255);*/
+    display:inline-block;
+    float:left;
+
+}
+#logo1{
+    margin-left: 2px;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    float:left;
+}
+#logo2{
+    height:40px;
+    width:45px;
+    background-color: red;
+    border-radius:25%;
+    margin-left: 1px;
+    font-weight:bold;
+    font-family: cursive;
+    color:rgb(255, 255, 255);
+    float:left;
+    margin-top:-4px;
+}
+#logo2my{
+    font-size:25px;
+    margin-left: 5px;
+    margin-top: -1px;
+    
+}
+#logo3{
+    margin-left: 0px;
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+    float:left;
+}
+.container1{
+    border: 2px solid black;
+    margin-left: -20px;
+    height:75px;
+}
+.container12{
+    margin-left: -20px;
+    border: 2px solid black;
+    width:60%;
+    height:75px;
+}
+/*------------------------------modal Section----------------------------------*/
+.Loginradius{
+    height:60px;
+    width:460px;
+    border-radius:10px 10px 10px 10px;
+    box-shadow:1px 1px 5px;
+}
+.loginbutton{
+    width:220px;
+    margin-top: 10px;
+}
+.body2{
+    margin-top: 30px;
+}
+#body2p{
+line-height: 0px;
+
+}
+#body2text{
+    width:200px;
+    background-color: #051322;
+
+}
+.bookingnav{
+    /*border: 2px solid rgb(255, 255, 0);*/
+    height:75px;
+}
+/*--------------------------------------Third Navbar------------------------------------------*/
+.backthirdnav{
+    background-color:#07192c;
+}
+
+select{
+    width:20%;
+}
+.Bookdatebox{
+    display:inline-block;
+    float:left;
+}
+/*--------------------------------------Fourth Navbar------------------------------------------*/
+.Fourthnav{
+   
+    background-color: rgb(173, 221, 248);
+}
+
+/*--------------------------------------Listing of hotels------------------------------------------*/
+.listingside{
+   /* border:2px solid yellow;*/
+   display: inline-block;
+   width:100%
+}
+.vertical1{
+    display: inline-block;
+    float: left;
+   
+    width: 20%;
+    /*border:3px solid violet;*/
+}
+.vertical2{
+    display: inline-block;
+    float: left;
+    
+    width: 80%;
+    /*border:3px solid rgb(12, 0, 247);*/
+}
+.radiobuttons{
+   /* border:2px solid red;*/
+}
+
+
+.radio2{
+    margin-top:30px;
+}
+
+.imagecard{
+    justify-content: center;
+}
+/*--------------------------------------Footer section------------------------------------------*/
+
+
+footer{
+     /*border:2px solid blue;*/
+     background-color: #051322;
+     height:150px;
+ }
+ .footer1{
+    /* border:1px solid rgb(59, 235, 23);*/
+     float:right;
+ }
+ .sociallink1{
+   /*  border:1px solid rgb(59, 235, 23);*/
+     width:10%;
+  
+ }
+ .sociallink{
+     text-decoration: none;;
+ }

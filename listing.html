@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <title>
+            hotels Listing
+        </title>
+        <link href="listing.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/12db171d40.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <div id="logooo">
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <div id="logoo">
+                                <div id="logo">
+                                    <span id="logo1">make</span>
+                                        <div id="logo2">
+                                            <div id="logo2my">
+                                                <span >my</span>
+                                            </div>                                       
+                                        </div>
+                                    <span id="logo3">trip</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+            </div>
+            <div id="logoooooooo">
+                <div class="logindiv">
+                    <button type="button" class="btn btn-primary" style="border-radius:10px 10px 10px 10px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login/Signup
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Personal Account</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="Loginradius">
+                                        <button type="button" style="margin-left:10px;" class="btn btn-outline-secondary loginbutton">Login</button>
+                                        <button type="button" class="btn btn-outline-secondary loginbutton">Signup</button>
+                                    </div>
+                                    <div class="body2">
+                                        <div id="body2p">
+                                            <p>Email or mobile Number</p>
+                                        </div>
+                                        <div id="body2text">
+                                            <input type="text" name="hi" placeholder="Enter email or mobile number" size=50>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                                <span class="terms">
+                                    <p>By proceeding you agree to MakeMyTrip's</p>
+                                    <span>
+                                        <a class="privacy" href="#">
+                                            <p>Privacy Policy</p>
+                                        </a>
+                                        <a class="privacy" href="#">
+                                           <p>User Agreement</p>
+                                       </a>
+                                       <a class="privacy" href="#">
+                                           <p>T & Cs</p>
+                                       </a>
+
+                                    </span>
+
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> </nav>
+            <div id="booksection">
+                <div class="container">
+                    <nav class="navbar navbar-light bg-white bookingnav ">
+                        <div class="container-fluid ">
+                            <ul class="navbar-nav list-group-horizontal mx-auto gap-5">
+                                <li class="nav-item list" >
+                                    <a class="nav-link active navbar-toggle" data-toggle="collapse" data-target="flight"  href="#">
+                                        <i class="fa-solid fa-plane fa-2x" ></i>
+                                        <p class="Navp">Flights</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-hotel fa-2x navbar-toggle" data-toggle="collapse" data-target="Bus"></i>
+                                        <p class="Navp">Hotels</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-house-chimney fa-2x"></i>
+                                        <p class="Navp">Homestays</p>
+                                    </a>
+                                </li>
+                                
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#flight">
+                                        <i class="fa-solid fa-bus fa-2x"></i>
+                                        <p class="Navp">Buses</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#bus">
+                                        <i class="fa-solid fa-cab fa-2x"></i>
+                                        <p class="Navp">Cabs</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-calendar-check fa-2x" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Holiday Packages"></i>
+                                        <p class="Navp">Holidays</p>
+                                        
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-train-subway fa-2x"></i>
+                                        <p class="Navp">Trains</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-person-walking fa-2x"></i>
+                                        <p class="Navp">Activities</p>
+                                    </a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </nav>  
+                </div>
+                <div>
+                <nav class="navbar navbar-dark backthirdnav">
+                    <div class="container">
+                        <select class="form-select" style="width:20%;" aria-label="Default select example">
+                            <option selected>   CITY</option>
+                            <option value="1">Bangalore</option>
+                            <option value="2">Delhi</option>
+                            <option value="3">Mumbai</option>
+                        </select>
+                        <div class="Bookdatebox" style="">
+                            <div class="Bookdatebox1">
+                                <div>
+                                    <label style="font-weight:bold">CHECK-IN</label>
+                                </div>
+                                <div>
+                                    <input type="date" id="calendar" placeholder="Select Date" name="Select Date" style="width:245px">
+
+                                </div>
+                            </div>
+                            <div class="Bookdatebox" style="">
+                                <div class="Bookdatebox1">
+                                    <div>
+                                        <label style="font-weight:bold">CHECK-OUT</label>
+                                    </div>
+                                    <div>
+                                        <input type="date" id="calendar" placeholder="Select Date" name="Select Date" style="width:245px">
+    
+                                    </div>
+                                </div>
+                    </div>
+                </nav>
+            </div>
+<div>
+    <nav class="navbar navbar-dark Fourthnav">
+        <div class="container">
+            <h2>Hotels Villas Appartments and More</h2>
+        </div>
+    </nav>
+</div>
+   <div class="listingside">
+       <div class="vertical1">
+           <div class="radiobuttons">
+               <h4>Filters For you</h4>
+               <p style="font:weight-bold;">Suggested For You</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Free Cancellation
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Free Breakfast
+                </label>
+              </div>
+
+              <div class="radio2">
+                <p style="font:weight-bold;">Price</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      1000-2000
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      2000-5000
+                    </label>
+                  </div>
+
+              </div>
+              <div class="radio2">
+                <p style="font:weight-bold;">Rating</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      5 Star rating
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      4 Star rating
+                    </label>
+                  </div>
+
+              </div>
+
+        </div>
+
+       </div>
+       <!-------------------------------------------------Listing Section----------------------------->
+    <div class="vertical2" >
+        <div class="imagecard">
+            <div class="card mb-3" style="width:100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/1407953244000-177513283.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Celi</h5>
+                            <p class="card-text">calangutte|360m from calngute beach</p>
+                            <p class="card-text"><small class="text-muted">150+guests like you rated their stay very good</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <div class="imagecard">
+            <div class="card mb-3" style="width:100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/Bellagio-Hotel-Casino-Las-Vegas.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">OYO Flagship 2863 hotel 4 Pillars</h5>
+                            <p class="card-text">Panjim</p>
+                            <p class="card-text"><small class="text-muted">30+guests like you rated their stay good</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="imagecard">
+            <div class="card mb-3" style="width:100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/pexels-thorsten-technoman-338504.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Taj Fort Aguda Resort & Spa Goa</h5>
+                            <p class="card-text">Candolim</p>
+                            <p class="card-text"><small class="text-muted">200+ guests like you rated their stay good</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+         </div>
+         <div class="imagecard" >
+            <div class="card mb-3" style="width:100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/itchotels-boutique.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Evoke Lifestyle candolim</h5>
+                            <p class="card-text">Candolim|1.4km from candolim beach</p>
+                            <p class="card-text"><small class="text-muted">150+guests like you rated their stay good</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+   </div>      
+   </div>      
+  <footer>
+    <div id="collectionsection">
+        <div class="footer1">
+            <p style="color:white;font-size:30px;">&copy;MakeMyTrip</p>
+            <P style="color:white;font-size:20px;float:right;">India</P>
+        </div>
+        <div class="sociallink1">
+            <a class="sociallink" href="https://github.com/Harshavardhan2123">
+                <i class="fa-brands fa-github fa-3x" style="color:white;" target="_blank"></i>
+                <i class="fa-brands fa-linkedin fa-3x" style="margin-left:10px;color:white;"></i>
+            </a>
+        </div>
+  </footer>
+
+        
+    </body>
+</html>

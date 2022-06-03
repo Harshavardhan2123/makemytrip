@@ -1,0 +1,386 @@
+<html>
+    <head>
+        <title>
+            MakeMyTrip
+        </title>
+        <link href="index.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <script src="https://kit.fontawesome.com/12db171d40.js" crossorigin="anonymous"></script>
+        <body>
+            <!------------------------------------Header Section-------------------------------------------------->
+            <header>
+                <div id="logooo">
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <div id="logoo">
+                                    <div id="logo">
+                                        <span id="logo1">make</span>
+                                            <div id="logo2">
+                                                <div id="logo2my">
+                                                    <span >my</span>
+                                                </div>                                       
+                                            </div>
+                                        <span id="logo3">trip</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>  
+                </div>
+                <!-- Button trigger modal -->
+                <div id="logoooooooo">
+                    <div class="logindiv">
+                        <button type="button" class="btn btn-primary" style="border-radius:10px 10px 10px 10px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Login/Signup
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Personal Account</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="Loginradius">
+                                            <button type="button" style="margin-left:10px;" class="btn btn-outline-secondary loginbutton">Login</button>
+                                            <button type="button" class="btn btn-outline-secondary loginbutton">Signup</button>
+                                        </div>
+                                        <div class="body2">
+                                            <div id="body2p">
+                                                <p>Email or mobile Number</p>
+                                            </div>
+                                            <div id="body2text">
+                                                <input type="text" name="hi" placeholder="Enter email or mobile number" size=50>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    <span class="terms">
+                                        <p>By proceeding you agree to MakeMyTrip's</p>
+                                        <span>
+                                            <a class="privacy" href="#">
+                                                <p>Privacy Policy</p>
+                                            </a>
+                                            <a class="privacy" href="#">
+                                               <p>User Agreement</p>
+                                           </a>
+                                           <a class="privacy" href="#">
+                                               <p>T & Cs</p>
+                                           </a>
+
+                                        </span>
+
+                                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </nav> 
+         
+               
+            </header>
+                        <!-----------------------------------Navbar Section-------------------------------------------------->
+
+            <div id="booksection">
+                <div class="container">
+                    <nav class="navbar navbar-light bg-white bookingnav ">
+                        <div class="container-fluid ">
+                            <ul class="navbar-nav list-group-horizontal mx-auto gap-5">
+                                <li class="nav-item list" >
+                                    <a class="nav-link active navbar-toggle" data-toggle="collapse" data-target="flight"  href="#">
+                                        <i class="fa-solid fa-plane fa-2x" ></i>
+                                        <p class="Navp">Flights</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-hotel fa-2x navbar-toggle" data-toggle="collapse" data-target="Bus"></i>
+                                        <p class="Navp">Hotels</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-house-chimney fa-2x"></i>
+                                        <p class="Navp">Homestays</p>
+                                    </a>
+                                </li>
+                                
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#flight">
+                                        <i class="fa-solid fa-bus fa-2x"></i>
+                                        <p class="Navp">Buses</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#bus">
+                                        <i class="fa-solid fa-cab fa-2x"></i>
+                                        <p class="Navp">Cabs</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-calendar-check fa-2x" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Holiday Packages"></i>
+                                        <p class="Navp">Holidays</p>
+                                        
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-train-subway fa-2x"></i>
+                                        <p class="Navp">Trains</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item list">
+                                    <a class="nav-link active" aria-current="page" href="#">
+                                        <i class="fa-solid fa-person-walking fa-2x"></i>
+                                        <p class="Navp">Activities</p>
+                                    </a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </nav>  
+                </div>
+<!--------------------------Radio Buton Selection Section-------------------------------------------------->
+
+                <div class="container bg-white booksec2" id="flight">
+                    
+                    <div class="booksec3">
+                        <div class="booksec4">
+                            <div class="tab active booksec5" >
+                                
+                                    <p style="font-weight:bold;">Book Domestic and International hotels Online</p>
+                                  
+                               
+                            </div>
+                            <!--<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        OneWay
+                                    </label>
+                            <div class="tab active booksec5 " >
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Round Trip
+                                    </label>
+                            </div>
+                            <div class="tab active booksec5" >
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Multi city
+                                    </label>
+                            </div>-->
+                           
+                        </div>
+                        <div class="container ">
+                            <div class="Bookselectbox">
+                                <div class="Bookselectbox1">
+                                    <div class="bookselectbox11"> 
+                                        <label style="font-weight:bold">CITY/HOTEL/AREA/BUILDING</label>      
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Mumbai</option>
+                                            <option value="1">Mumbai</option>
+                                            <option value="2">Delhi</option>
+                                            <option value="3">Bangalore</option>
+                                        </select>
+                                    </div>
+                                </div>
+<!--
+                                <div class="Bookselectbox1">
+                                    <div class="bookselectbox11"> 
+                                        <label style="font-weight:bold">To</label>      
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Bangalore</option>
+                                            <option value="1">Mumbai</option>
+                                            <option value="2">Delhi</option>
+                                            <option value="3">Bangalore</option>
+                                        </select>
+                                    </div>
+                                </div>-->
+
+                                <div class="Bookdatebox" style="border-right:1px solid black;">
+                                    <div class="Bookdatebox1">
+                                        <div>
+                                            <label style="font-weight:bold">CHECK-IN</label>
+                                        </div>
+                                        <div>
+                                            <input type="date" id="calendar" placeholder="Select Date" name="Select Date" style="width:245px">
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="Bookdatebox">
+                                    <div class="Bookdatebox1">
+                                        <div>
+                                            <label style="font-weight:bold">CHECK-OUT</label>
+                                        </div>
+                                        <div>
+                                            <input type="date" id="calendar" placeholder="Select Date" name="Select Date" style="width:245px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                   
+                    <div class="container" id="fareswrap">
+                        <div class="fares">
+                            <div class="fares1">
+                                <p style="color:rgb(139, 133, 133);">Select A </p>
+                            </div>
+                            <div class="fares1">
+                                <p style="color:rgb(139, 133, 133);" >fare type</p>
+                            </div>
+                        </div>
+                        <div class="faresbox">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-secondary outlineradiobutton" for="btnradio1">Regular Fares</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-secondary outlineradiobutton" for="btnradio2">Student Fares</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-secondary outlineradiobutton" for="btnradio3"> Senior Citizen Fares</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="searchbutton" >
+                            <div class="searchbutton2">
+                                <button type="button" onclick="window.open('///E:/MAKE%20MY%20TRIP%20PROJECT/listing.html#')" class="btn btn-primary">search</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+               
+                <!-----------------------------------Search Button Section-------------------------------->
+                <div class="bg-white ">
+                    <h3>Offers</h3>
+                    <div class="container ">
+                        <div class="offermain1">
+                            <div class="offermain">
+                                <div class="card mb-3 cardshadow " style="max-width: 540px;">
+                               
+                                    <div class="row g-0 ">
+                                        
+                                        <div class="col-md-4 ">
+                                        <a class="img"  href="#">
+                                            <img src="images/spicejet-banner.jpg" class="img-fluid rounded-start" alt="...">
+                                        </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">JUST IN:SpiceJet Introduces New Flights from/to</h5>
+                                                    <!--<p class="card-text">Delhi & Porbandar! bookings open for travel from 27th April onwards.</p>-->
+                                                <p class="card-text"><small class="text-muted">Delhi & Porbandar! bookings open for travel from 27th April onwards.</small></p>
+                                            </div>
+                                        </div> 
+                                    
+                                    </div>
+                                </div>
+                                <div class="card mb-3 cardshadow  cardshadow2 " style="max-width: 540px;">
+                           
+                                    <div class="row g-0 ">
+                                        
+                                        <div class="col-md-4 ">
+                                            <a class="img"  href="#">
+                                                <img src="images/cancel-icici-bank-credit-card.webp" class="img-fluid rounded-start" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">ICICI</h5>
+                                                    <p class="card-text">Here Now:up to Rs.1850 OFF* om Domestic Flights!</p>
+                                                <p class="card-text"><small class="text-muted">Avail now and let you travel dreams take-off.</small></p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="card mb-3 cardshadow  " style="max-width: 540px;">
+                                   
+                                    <div class="row g-0 ">
+                                        
+                                        <div class="col-md-4 ">
+                                            <a class="img"  href="#">
+                                                <img src="images/photo-1535535112387-56ffe8db21ff.jpg" class="img-fluid rounded-start" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RAILS</h5>
+                                                    <p class="card-text">Get Free Cancellation on Train bookings!</p>
+                                                <p class="card-text"><small class="text-muted">Make your train travel easier,penalty free and worry-free</small></p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="card mb-3 cardshadow cardshadow2 " style="max-width: 540px;">
+                                   
+                                    <div class="row g-0 ">
+                                        
+                                        <div class="col-md-4 ">
+                                            <a class="img"  href="#">
+                                                <img src="images/spicejet-banner.jpg" class="img-fluid rounded-start" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">INTL FLIGHTS</h5>
+                                                    <p class="card-text">Just In:SpiceJet Introduces new Flights </p>
+                                                <p class="card-text"><small class="text-muted">from/to sharjah and pune,bookings open for travel from 1st sept onwards</small></p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                       
+
+            
+               
+                
+                </div>
+            </div>
+
+
+            </div>
+            <!---------------------------------------Footer Section----------------------------------------->
+            <footer>
+                <div id="collectionsection">
+                    <div class="footer1">
+                        <p style="color:white;font-size:30px;">&copy;MakeMyTrip</p>
+                        <P style="color:white;font-size:20px;float:right;">India</P>
+                    </div>
+                    <div class="sociallink1">
+                        <a class="sociallink" href="https://github.com/Harshavardhan2123">
+                            <i class="fa-brands fa-github fa-3x" style="color:white;" target="_blank"></i>
+                            <i class="fa-brands fa-linkedin fa-3x" style="margin-left:10px;color:white;"></i>
+                        </a>
+                    </div>
+
+            </footer>
+
+            
+            
+
+            </div>
+        
+        </body>
+    </head>
+</html>
