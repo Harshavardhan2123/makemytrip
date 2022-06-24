@@ -8,7 +8,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
         <script src="https://kit.fontawesome.com/12db171d40.js" crossorigin="anonymous"></script>
+        <script src="darkmode.js"></script>
         <body>
+           
+            
             <!------------------------------------Header Section-------------------------------------------------->
             <header>
                 <div id="logooo">
@@ -29,6 +32,8 @@
                             </div>
                         </div>  
                 </div>
+<!-----------------------------dark mode----------------------------------------------->
+<button class="btn" onclick="changemode()"><i class="fa-solid fa-lightbulb fa-3x" style="color:gold;"></i></button>
                 <!-- Button trigger modal -->
                 <div id="logoooooooo">
                     <div class="logindiv">
@@ -89,13 +94,18 @@
          
                
             </header>
+             
                         <!-----------------------------------Navbar Section-------------------------------------------------->
 
             <div id="booksection">
+                
                 <div class="container">
-                    <nav class="navbar navbar-light bg-white bookingnav ">
+                    
+                    <nav class="navbar navbar-light bookingnav ">
                         <div class="container-fluid ">
+                            
                             <ul class="navbar-nav list-group-horizontal mx-auto gap-5">
+                                
                                 <li class="nav-item list" >
                                     <a class="nav-link active navbar-toggle" data-toggle="collapse" data-target="flight"  href="#">
                                         <i class="fa-solid fa-plane fa-2x" ></i>
@@ -147,6 +157,17 @@
                                     </a>
                                 </li>
                             </ul> 
+
+                        </div>
+                        <div id="coupon">
+                            <button onclick="closecoupon()">&times;</button>
+                            <h3>Holidays</h3>
+                            <div style="margin-top:250px;">
+                                <span style="color:white;line-height:-50px;font-size:30px;margin-top:50px">Book Your Kashmir holidays Now |</span>
+                            <span style="color:rgb(255, 255, 255)">
+                                Get up to 25% off on Packages
+                            </span>
+                            </div>
                         </div>
                     </nav>  
                 </div>
@@ -259,18 +280,19 @@
                     <div class="container">
                         <div class="searchbutton" >
                             <div class="searchbutton2">
-                                <button type="button" onclick="window.open('///E:/MAKE%20MY%20TRIP%20PROJECT/listing.html#')" class="btn btn-primary">search</button>
+                                <button type="button" onclick="listing.html" class="btn btn-primary">search</button>
 
                             </div>
                         </div>
 
                     </div>
                 </div>
-               
+          
                 <!-----------------------------------Search Button Section-------------------------------->
-                <div class="bg-white ">
-                    <h3>Offers</h3>
-                    <div class="container ">
+                
+                    
+                    <div class="container offers">
+                        <h3>Offers</h3>
                         <div class="offermain1">
                             <div class="offermain">
                                 <div class="card mb-3 cardshadow " style="max-width: 540px;">
@@ -380,7 +402,11 @@
             
 
             </div>
-        
+        <script>
+            
+                window.onload=loadcoupon()
+            
+        </script>
         </body>
     </head>
 </html>

@@ -1,9 +1,36 @@
 header{
     width: 100%;
-    /*border:2px solid red;*/
+  /*  border:2px solid red;*/
     background-color: #07192c;
     display:inline-block;
     float:left;
+
+}
+body{
+    background-color: rgb(255, 248, 248);
+    
+}
+.mydark{
+    background-color: rgb(0, 0, 0);
+    
+}
+#coupon{
+   height:400px;
+    width:400px;
+    background-image:url('images/1kashmir.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;  
+    z-index:400;
+    margin:auto;
+}
+#coupon>img{
+    height:200px;
+    width:100px;
+
+}
+
+.closecoupon{
+    margin-bottom:200px;
 
 }
 #logooo{
@@ -89,7 +116,7 @@ line-height: 0px;
 }
 /*--------------------------------------Book Section--------------------------------------*/
 #booksection{
-   /* height:400px;*/
+   height:400px;
     width:100%;
     /*border:2px solid black;*/
     background-image: linear-gradient(to bottom,#051322,#15457c);
@@ -98,6 +125,7 @@ line-height: 0px;
 .bookingnav{
     height:80px;
     width:88%;
+    background-color: white;
     border-radius: 5px 5px 5px 5px; 
     margin-left:6%;
     box-shadow:2px 2px 10px rgb(12, 12, 12);
@@ -241,16 +269,23 @@ display: inline-block;
 
 }
 /*--------------------------------------offer Section--------------------------------------*/
+.offers{
+  margin-top: 50px;
+}
 .cardshadow{
     box-shadow:10px 10px 30px;
     display: inline-block;
     float:left;
+    border: 1px solid rgb(39, 13, 143);
+
 }
 .cardshadow2{
     margin-left: 30px;
+    border: 1px solid rgb(82, 44, 44);
+
 }
 .offermain1{
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     display: inline-block;
 }
 .img{
@@ -270,6 +305,7 @@ display: inline-block;
 /*--------------------------------------Footer Section--------------------------------------*/
 footer{
    /* border:2px solid blue;*/
+   margin-top: 600px;
     background-color: #051322;
     height:150px;
 }
