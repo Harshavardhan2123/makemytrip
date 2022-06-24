@@ -21,3 +21,8 @@ function closecoupon()
     coup.classList.toggle("closecoupon")
 
 }
+function search()
+{
+    document.location.href="listing.html";
+    
+}
