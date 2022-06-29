@@ -16,7 +16,7 @@ body{
 }
 #coupon{
    height:400px;
-    width:400px;
+    width:274px;
     background-image:url('images/1kashmir.jpg');
     background-repeat: no-repeat;
     background-size:cover;  
@@ -90,6 +90,19 @@ body{
     font-weight:bold;
     color:white;
     float:left;
+}
+/*--------------------------------------GEO LOCATION--------------------------------------*/
+#out{
+    color:white;
+}
+#weatherOut{
+    color:white;
+}
+.geo{
+    border-radius:10px 10px 10px 10px;
+    background-color:#07192c;
+    border:none;
+    color:white;
 }
 /*--------------------------------------Modal Section--------------------------------------*/
 .Loginradius{

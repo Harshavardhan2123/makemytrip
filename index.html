@@ -33,8 +33,15 @@
                         </div>  
                 </div>
 <!-----------------------------dark mode----------------------------------------------->
-<button class="btn" onclick="changemode()"><i class="fa-solid fa-lightbulb fa-3x" style="color:gold;"></i></button>
-                <!-- Button trigger modal -->
+                    <button class="btn" onclick="changemode()"><i class="fa-solid fa-lightbulb fa-3x" style="color:gold;"></i></button>
+                    <span style="color:white;">|</span>
+<!-----------------------------Geo Location----------------------------------------------->
+
+                    <button onClick="geolocation()" class="geo" id="btn"><i class="bi bi-geo-alt"></i>
+                        Detect Current Location</button>
+                    <span id="weatherOut"></span>
+                    <span style="color:white;">|</span>
+                <!---------------------------------- Button trigger modal -------------------------------------->
                 <div id="logoooooooo">
                     <div class="logindiv">
                         <button type="button" class="btn btn-primary" style="border-radius:10px 10px 10px 10px" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -162,8 +169,8 @@
                         <div id="coupon">
                             <button onclick="closecoupon()">&times;</button>
                             <h3>Holidays</h3>
-                            <div style="margin-top:250px;">
-                                <span style="color:white;line-height:-50px;font-size:30px;margin-top:50px">Book Your Kashmir holidays Now |</span>
+                            <div style="margin-top:270px;">
+                                <span style="color:white;line-height:-50px;font-size:20px;margin-top:50px">Book Your Kashmir holidays Now |</span>
                             <span style="color:rgb(255, 255, 255)">
                                 Get up to 25% off on Packages
                             </span>
@@ -171,7 +178,7 @@
                         </div>
                     </nav>  
                 </div>
-<!--------------------------Radio Buton Selection Section-------------------------------------------------->
+<!--------------------------Radio Button Selection Section-------------------------------------------------->
 
                 <div class="container bg-white booksec2" id="flight">
                     
@@ -402,6 +409,37 @@
             
 
             </div>
+            <script>
+                let x = document.getElementById('out');
+                let y = document.getElementById('weatherOut');
+                function geolocation(){
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(showPosition)
+                    }else{
+                        x.innerText = "Geo Not Supported"
+                    }
+                }
+    
+                function showPosition(data){
+                    console.log(data)
+                    let latitude = data.coords.latitude;
+                    let longitude = data.coords.longitude;
+                    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+                    //api calling
+                    fetch(url,{method:'GET'})
+                    //return promise
+                    .then((res) => res.json())
+                    // resolve promise
+                    .then((data) => {
+                        console.log(data)
+                        let cityName = data.city.name
+                        let temp = data.list[0].temp.day
+                        y.innerText = `Book From ${cityName}`
+                    })
+                    
+                    x.innerText = `Latitude is ${latitude} and Longitude is ${longitude}`;
+                }
+            </script>
         <script>
          window.onload=loadcoupon()
         
